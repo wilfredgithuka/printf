@@ -7,5 +7,5 @@
 #include <unistd.h>
 
 int _printf(const char *format, ...);
-
+int printf_char(va_list val)
 #endif
