@@ -48,11 +48,11 @@ int printf_char(va_list val);
 
 
 /* Funtions to print chars and strings */
-int print_char(va_list x, char buffer[],
+int print_char(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
-int print_string(va_list y, char buffer[],
+int print_string(va_list types, char buffer[],
 		int flags, int width, int precision, int size);
-int print_pc(va_list z, char buffer[],
+int print_pc(va_list types, char buffer[],
 		int flags, int width, int precision, int size);
 
 
