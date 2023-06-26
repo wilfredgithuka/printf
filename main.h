@@ -55,5 +55,15 @@ int print_string(va_list types, char buffer[],
 int print_pc(va_list types, char buffer[],
 		int flags, int width, int precision, int size);
 
+/* Functions to print numbers */
+int print_int(va_list types, char buffer[],
+	int flags, int width, int precision, int size);
+int print_binary(va_list types, char buffer[],
+	int flags, int width, int precision, int size);
+int print_unsigned(va_list types, char buffer[],
+	int flags, int width, int precision, int size);
+
+long int convert_size_number(long int num, int size);
+long int convert_size_unsgnd(unsigned long int num, int size);
 
 #endif
