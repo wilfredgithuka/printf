@@ -10,7 +10,6 @@
  * @size: Size specifierr
  * Return: Number of chars printed
  */
-
 int print_string(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
@@ -22,14 +21,12 @@ int print_string(va_list types, char buffer[],
 	UNUSED(size);
 	UNUSED(buffer);
 	UNUSED(flags);
-
 	if (str == NULL)
 	{
 		str = "(null)";
 		if (precision >= 6)
 			str = "      ";
 	}
-
 	while (str[length] != '\0')
 		length++;
 
@@ -53,7 +50,6 @@ int print_string(va_list types, char buffer[],
 			return (width);
 		}
 	}
-
 	return (write(1, str, length));
 }
 
