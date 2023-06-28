@@ -1,7 +1,5 @@
 #include "main.h"
 
-/* This set will start with strings*/
-
 /**
  * print_string - Shows a string
  * @types: List ssa of arguments
